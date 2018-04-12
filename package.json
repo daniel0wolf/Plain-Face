@@ -1,0 +1,18 @@
+{
+  "fitbit": {
+    "appUUID": "dc847078-4f3c-4cd7-bdf1-360929681998",
+    "appType": "clockface",
+    "appDisplayName": "Plain",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "meson"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Plain"
+      }
+    }
+  }
+}

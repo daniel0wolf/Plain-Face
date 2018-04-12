@@ -1,0 +1,133 @@
+<svg class="background">
+  <!-- <gradientRect width="100%" height="100%"
+    gradient-type="linear"
+    gradient-x1="0" gradient-y1="50"
+    gradient-x2="0" gradient-y2="100%-50"
+    gradient-color1="#24A7F4" gradient-color2="#0DD9E2" /> -->
+  <image href="images/plain_bg.png" class="background" />
+  <!-- clouds -->
+  <image href="images/clouds.png" width="300" height="149" x="0" y="160" />
+  <section>
+    <defs>
+      <symbol id="clouds1">
+        <g transform="translate(50%,195)">
+          <animateTransform attributeType="scale" from="1" to="0" begin="load;enable" end="disable" final="keep" dur="1" repeatCount="indefinite" easing="ease-in" />
+          <animateTransform attributeType="translate" from="50%,190" to="50%,228" begin="load;enable" end="disable" final="keep" dur="1" repeatCount="indefinite" easing="ease-in" />
+          <animate attributeName="opacity" begin="load;enable" end="disable" from="1" to="0.2" dur="1" final="keep" repeatCount="indefinite" easing="ease-in" />
+          <image href="images/cloudsMove2.png" class="clouds" />
+        </g>
+      </symbol>
+    </defs>
+    <svg width="100%" height="100%">
+      <use id="cloudsAnimation1" href="#clouds1" width="100%" height="100%" />
+    </svg>
+  </section>
+  <section>
+    <defs>
+      <symbol id="clouds2">
+        <g transform="translate(50%,195)">
+          <animateTransform attributeType="scale" from="1" to="0" begin="load;enable" end="disable" final="keep" dur="1" repeatCount="indefinite" easing="ease-in" />
+          <animateTransform attributeType="translate" from="50%,200" to="50%,228" begin="load;enable" end="disable" final="keep" dur="1" repeatCount="indefinite" easing="ease-in" />
+          <animate attributeName="opacity" begin="load;enable" end="disable" from="1" to="0.2" dur="1" final="keep" repeatCount="indefinite" easing="ease-in" />
+          <image href="images/cloudsMove1.png" class="clouds" />
+        </g>
+      </symbol>
+    </defs>
+    <svg width="100%" height="100%">
+      <use id="cloudsAnimation2" href="#clouds2" width="100%" height="100%" />
+    </svg>
+  </section>
+  <!-- //clouds -->
+  <text id="time" />
+  <!-- plane -->
+  <!-- <section>
+    <defs>
+      <symbol id="plane" x="50%" y="58%">
+        <g pointer-events="visible" transform="translate(0%,0%)">
+          <animateTransform attributeType="rotate" from="-3" to="3" begin="load;enable" end="disable" final="restore" dur="1.3" repeatCount="indefinite" easing="linear" />
+          <animateTransform attributeType="translate" from="0,-3" to="0,3" begin="load;enable" end="disable" final="restore" dur="2.5" repeatCount="indefinite" easing="ease" />
+          <image class="planeBody" href="images/plain_body.png" />
+        </g>
+      </symbol>
+    </defs>
+    <svg width="100%" height="100%">
+      <use id="planeAnimation" href="#plane" width="100%" height="100%" />
+    </svg>
+  </section> -->
+  <section>
+    <defs>
+      <symbol id="planeRap">
+        <g transform="scale(0)">
+          <defs>
+            <symbol id="plane" x="50%" y="58%">
+              <g pointer-events="visible" transform="translate(0%,0%)">
+                <animateTransform attributeType="rotate" from="-3" to="3" begin="load;enable" end="disable" final="restore" dur="1.3" repeatCount="indefinite" easing="linear" />
+                <animateTransform attributeType="translate" from="0,-3" to="0,3" begin="load;enable" end="disable" final="restore" dur="2.5" repeatCount="indefinite" easing="ease" />
+                <image class="planeBody" href="images/plain_body.png" />
+              </g>
+            </symbol>
+          </defs>
+          <svg width="100%" height="100%">
+            <use id="planeAnimation" href="#plane" width="100%" height="100%" />
+          </svg>
+          <animateTransform attributeType="scale" from="0" to="1" begin="load;enable" end="disable" final="keep" dur="5" repeatCount="1" easing="ease-out" />
+          <animateTransform attributeType="translate" from="150,250" to="0,0" begin="load;enable" end="disable" final="keep" dur="5" repeatCount="1" easing="ease-out" />
+          <animate attributeName="opacity" begin="load;enable" end="disable" from="0" to="1" dur="1.3" final="keep" repeatCount="1" easing="ease-in" />
+          <animateTransform attributeType="rotate" from="0" to="360" begin="load;enable" end="disable" dur="2" final="keep" repeatCount="1" easing="ease-out" />
+        </g>
+      </symbol>
+    </defs>
+    <svg width="100%" height="100%">
+      <use id="planeMove" href="#planeRap" width="100%" height="100%" />
+    </svg>
+  </section> -->
+  <!-- //plane -->
+  <!-- plane's propellers -->
+  <!-- <section>
+    <defs>
+      <symbol id="propellers" x="50%" y="58%">
+        <g pointer-events="visible" transform="translate(0%,0%)">
+          <animateTransform attributeType="rotate" from="-80" to="80" final="restore" begin="load;enable" end="disable" dur="0.3" repeatCount="indefinite" easing="linear" />
+          <animateTransform attributeType="translate" from="0,-3" to="0,3" begin="load;enable" end="disable" final="restore" dur="2.5" repeatCount="indefinite" easing="ease" />
+          <image href="images/propellers.png" class="propellers" />
+        </g>
+      </symbol>
+    </defs>
+    <svg width="100%" height="100%">
+      <use id="propellersAnimation" href="#propellers" width="100%" height="100%" />
+    </svg>
+  </section> -->
+  <section>
+    <defs>
+      <symbol id="propellersRap">
+        <g transform="scale(0)">
+          <defs>
+            <symbol id="propellers" x="50%" y="58%">
+              <g pointer-events="visible" transform="translate(0%,0%)">
+                <animateTransform attributeType="rotate" from="-80" to="80" final="restore" begin="load;enable" end="disable" dur="0.3" repeatCount="indefinite" easing="linear" />
+                <animateTransform attributeType="translate" from="0,-3" to="0,3" begin="load;enable" end="disable" final="keep" dur="2.5" repeatCount="indefinite" easing="ease" />
+                <image href="images/propellers.png" class="propellers" />
+              </g>
+            </symbol>
+          </defs>
+          <svg width="100%" height="100%">
+            <use id="propellersAnimation" href="#propellers" width="100%" height="100%" />
+          </svg>
+          <animateTransform attributeType="scale" from="0" to="1" begin="load;enable" end="disable" final="keep" dur="5" repeatCount="1" easing="ease-out" />
+          <animateTransform attributeType="translate" from="150,250" to="0,0" begin="load;enable" end="disable" final="keep" dur="5" repeatCount="1" easing="ease-out" />
+          <animate attributeName="opacity" begin="load;enable" end="disable" from="0" to="1" dur="1.3" final="keep" repeatCount="1" easing="ease-in" />
+          <animateTransform attributeType="rotate" from="0" to="360" begin="load;enable" end="disable" dur="2" final="keep" repeatCount="1" easing="ease-out" />
+        </g>
+      </symbol>
+    </defs>
+    <svg width="100%" height="100%">
+      <use id="propellersMove" href="#propellersRap" width="100%" height="100%" />
+    </svg>
+  </section>
+  <!-- //plane's propellers -->
+  <text id="date" />
+  <section x="275" y="10">
+    <image id="batIcon" href="images/battery.png" />
+    <rect id="batRect" />
+  </section>
+</svg>

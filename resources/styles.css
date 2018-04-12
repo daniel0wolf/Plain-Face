@@ -1,0 +1,70 @@
+.background {
+  viewport-fill: #24A7F4;
+}
+
+#time {
+  text-anchor: middle;
+  font-size: 89;
+  font-family: Fabrikat-Black;
+  text-length: 5;
+  x: 50%;
+  y: 108;
+  fill: #ffffff;
+}
+
+#date {
+  text-anchor: middle;
+  text-length: 10;
+  x: 50%;
+  y: 283;
+  font-size: 29;
+  font-family: Fabrikat-Black;
+  fill: #455A64;
+}
+
+#batIcon {
+  x: 0;
+  y: 0;
+  width: 14;
+  height: 23;
+  display: none;
+}
+#batRect {
+  x: 3;
+  y: 5;
+  width: 8;
+  height: 10;
+  fill: #24A7F4;
+}
+
+.background {
+  width:300;
+  height: 300;
+  /* height: 144; */
+  x: 0;
+  /* y: 157; */
+  y: 0;
+}
+
+.planeBody {
+  width: 165;
+  height: 64;
+  x: $-82; 
+  y: $-14;
+}
+
+.propellers {
+  x: $-27;
+  y: $-28;
+  width: 57;
+  height: 57;
+}
+
+.clouds {
+  x: $-150;
+  y: $0;
+  width: 300;
+  height: 129;
+  fill: #ffffff;
+  opacity: 1;
+}
