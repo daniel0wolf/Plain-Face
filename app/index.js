@@ -9,13 +9,14 @@ function updateClock() {
   let elTime = document.getElementById("time");
   let elDate = document.getElementById("date");
   let dtDate = new Date();
-  let iHours = dtDate.getHours();
-  let iMins = util.zeroPad(dtDate.getMinutes());
+  let iHours = util.monoDigits(dtDate.getHours());
+  let spacer = ' ';
+  let iMins = util.monoDigits(util.zeroPad(dtDate.getMinutes()));
   
   iHours = iHours % 24;
   iHours = iHours ? iHours : 24;
 
-  elTime.text = `${iHours}:${iMins}`;
+  elTime.text = `${iHours}${spacer}${iMins}`;
   
   elDate.text = `${util.getDay3(dtDate.getDay())} ${dtDate.getDate()} ${util.getMonth3(dtDate.getMonth())}`;
 }
@@ -43,6 +44,7 @@ if ( switcher === false) {
 }
 // END battery
 
+// animations start on screen on
 import { display } from "display";
 
 display.onchange = function() { 
@@ -59,16 +61,18 @@ var propellersMove = document.getElementById("propellersMove");
 var propellersAnimation = document.getElementById("propellersAnimation");
 var planeMove = document.getElementById("planeMove");
 var planeAnimation = document.getElementById("planeAnimation");
+var dotsBlink182 = document.getElementById("dotsBlink182");
 
 function displayOn() {
   console.log("Display ON");
   
-  //propellersAnimation.animate("enable");
-  //planeAnimation.animate("enable");
-  
-  
   propellersMove.animate("enable");
   planeMove.animate("enable");
+  clouds1.animate("enable");
+  dotsBlink182.animate("enable");
+  
+  planeMove.style.visibility = "visible";
+  propellersMove.style.visibility = "visible";
   
   setTimeout(function() {
     propellersAnimation.animate("enable");
@@ -76,12 +80,8 @@ function displayOn() {
   }, 6000);
   
   setTimeout(function() {
-    clouds1.animate("enable");
-  }, 10);
-  
-  setTimeout(function() {
     clouds2.animate("enable");
-  }, 500);
+  }, 750);
 }
 
 function displayOff() {
@@ -93,4 +93,8 @@ function displayOff() {
   propellersAnimation.animate("disable");
   planeMove.animate("disable");
   planeAnimation.animate("disable");
+  planeMove.style.visibility = "hidden";
+  propellersMove.style.visibility = "hidden";
+  dotsBlink182.animate("disable");
 }
+// END animations start on screen on

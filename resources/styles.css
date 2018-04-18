@@ -5,10 +5,20 @@
 #time {
   text-anchor: middle;
   font-size: 89;
-  font-family: Fabrikat-Black;
+  font-family: Seville-Bold-Condensed;
+  text-length: 5;
+  x: 51%;
+  y: 108;
+  fill: #ffffff;
+}
+
+.dots {
+  text-anchor: middle;
+  font-size: 89;
+  font-family: Seville-Bold-Condensed;
   text-length: 5;
   x: 50%;
-  y: 108;
+  y: 100;
   fill: #ffffff;
 }
 
@@ -18,7 +28,7 @@
   x: 50%;
   y: 283;
   font-size: 29;
-  font-family: Fabrikat-Black;
+  font-family: Seville-Bold-Condensed;
   fill: #455A64;
 }
 
